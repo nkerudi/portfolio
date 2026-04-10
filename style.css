@@ -133,3 +133,73 @@ section {
 section > header h2 {
   margin-bottom: 0.5rem;
 }
+
+.resume-header {
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.resume-header p {
+  margin: 0;
+  color: #555;
+}
+
+section {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid oklch(85% 3% 200);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section > header h2 {
+  border-left: 0.35rem solid var(--color-accent);
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+article h3 {
+  margin-bottom: 0.25rem;
+}
+
+article p {
+  margin: 0.2rem 0;
+}
+
+ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+time {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+section:last-of-type ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  gap: 0.5rem 1.5rem;
+  padding-left: 1.2rem;
+}
