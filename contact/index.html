@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-    <h1 style="text-align: center;">Nikitha Kerudi : Contact Information</h1>
-    <p style="text-align: center;">
-        Feel free to reach out to me via LinkedIn or check out some of my projects below!
-    </p>
-
-    <nav style="text-align: center;">
+  <nav style="text-align: center;">
         <a href="../index.html">Home</a> |
-        <a href="https://github.com/nkerudi">Projects</a> |
-        <a href="./index.html">Contact</a> |
-        <a href="../resume/index.html">Resume</a> |
+        <a href="../projects/index.html">Projects</a> |
+        <a href="https://github.com/nkerudi">Github</a> |
+        <a href="../contact/index.html">Contact</a> |
+        <a href="./index.html">Resume</a> |
         <a href="https://www.linkedin.com/in/nikitha-kerudi/">LinkedIn Profile</a> 
     </nav>
 
-    <form 
-        action="mailto:nikithakerudi@gmail.com" 
-        method="POST" 
-        enctype="text/plain"
-        style="text-align: center; margin-top: 20px;"
-    >
-        <label>
-            Your Email:
-            <br>
-            <input type="email" name="email">
-        </label>
-        <br><br>
+  <h1 class="page-title">Nikitha Kerudi: Contact Information</h1>
 
-        <label>
-            Subject:
-            <br>
-            <input name="subject">
-        </label>
-        <br><br>
+  <p class="page-subtitle">
+    Feel free to reach out to me via LinkedIn or send me a message below.
+  </p>
 
-        <label>
-            Message:
-            <br>
-            <textarea name="body" rows="4" cols="50"></textarea>
-        </label>
-        <br><br>
+  <form action="mailto:nikithakerudi@gmail.com" method="POST" enctype="text/plain">
+    <label>
+      <span>Your Email:</span>
+      <input type="email" name="email">
+    </label>
 
-        <button>Submit</button>
-    </form>
+    <label>
+      <span>Subject:</span>
+      <input name="subject">
+    </label>
+
+    <label>
+      <span>Message:</span>
+      <textarea name="body" rows="4"></textarea>
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
