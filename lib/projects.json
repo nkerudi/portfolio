@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Portfolio Website Build",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A responsive personal website built with HTML and CSS to showcase projects, experience, and contact information."
+    },
+    {
+        "title": "Data Analysis Dashboard",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A beginner dashboard project focused on exploring datasets and presenting patterns clearly through visual design."
+    },
+    {
+        "title": "Machine Learning Classifier",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A machine learning experiment comparing basic models and evaluating performance on a structured dataset."
+    },
+    {
+        "title": "Study Resource Organizer",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A lightweight tool concept for organizing academic notes, links, and review materials in one place."
+    },
+    {
+        "title": "Campus Event Finder",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A simple project idea for surfacing campus opportunities and making student events easier to browse."
+    },
+    {
+        "title": "Research Notes Archive",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A clean and searchable archive design for organizing technical notes, experiments, and references."
+    }
+]
