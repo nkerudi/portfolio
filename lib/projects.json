@@ -1,32 +1,74 @@
 [
     {
         "title": "Portfolio Website Build",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A responsive personal website built with HTML and CSS to showcase projects, experience, and contact information."
     },
     {
         "title": "Data Analysis Dashboard",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A beginner dashboard project focused on exploring datasets and presenting patterns clearly through visual design."
     },
     {
         "title": "Machine Learning Classifier",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A machine learning experiment comparing basic models and evaluating performance on a structured dataset."
     },
     {
         "title": "Study Resource Organizer",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A lightweight tool concept for organizing academic notes, links, and review materials in one place."
     },
     {
         "title": "Campus Event Finder",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A simple project idea for surfacing campus opportunities and making student events easier to browse."
     },
     {
         "title": "Research Notes Archive",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A clean and searchable archive design for organizing technical notes, experiments, and references."
+    },
+    {
+        "title": "Regional Major Power Outage Model",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "An in depth analysis on the causes of major power outages and the use of a machine learning model to predict the cause of outages based on regional facotrs."
+    },
+    {
+        "title": "Full Stack Learning Management System",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built full-stack Canva-Style LMS with Supabase, Express, Next.js and React. Implemented Google OAuth for authentication and Google File Picker API for file uploads."
+    },
+    {
+        "title": "Autonomous Mobile Robot Proof of Concept",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a functional proof of concept similating AMR movement throughout warehouses with varying layouts and obstacles using the VDA 5050 Strategy Report as standards."
+    }, 
+    {
+        "title": "LLM Benchmarking System",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a benchmarking system to evaluate the performance of various LLMs on a range of tasks, including natural language understanding, generation, and reasoning. The system provides insights into the strengths and weaknesses of different models given little context and domain specific questions."
+    },
+    {
+        "title": "Hierarchical Time Series Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Conducted hierarchical time series analysis on e-commerce paltform user interactions to identify anaomaly patterns based on device operating system and geographical location."
+    },
+    {
+        "title": "To Do List Application",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A simple to-do list application with a clean and intuitive user interface."
     }
 ]
