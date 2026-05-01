@@ -47,7 +47,7 @@ function renderPieChart(projectsGiven) {
   legend.selectAll("li").remove();
 
   let rolledData = d3.rollups(
-    projectGiven, 
+    projectsGiven, 
     (v) => v.length,
     (d) => d.year
   );
