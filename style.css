@@ -163,7 +163,7 @@ form button {
 .legend {
   flex: 1;
   display: grid;
-  grid-template-columns: repear(auto-dill, minmax(9em, 1fr));
+  grid-template-columns: repeat(auto-dill, minmax(9em, 1fr));
   gap: 1em;
   padding: 1em;
   margin-block: 2em;

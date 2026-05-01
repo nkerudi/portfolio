@@ -1,6 +1,8 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 import { fetchJSON, renderProjects } from '../global.js';
 
+console.log("projects.js loaded");
+
 const projects = await fetchJSON('../lib/projects.json');
 
 const projectsContainer = document.querySelector('.projects');
@@ -15,7 +17,7 @@ if (projectsTitle) {
 
 
 let query ="";
-let selectedIndex = -1;
+
 let selectedYear = null;
 
 renderProjects(projects, projectsContainer, 'h2');
@@ -62,26 +64,24 @@ function renderPieChart(projectsGiven) {
   let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
   arcs.forEach((arc, i) => {
-    svg.append("path")
+    svg
+      .append("path")
       .attr("d", arc)
       .attr("fill", colors(i))
-      .attr("class", data[i].label == selectedYear ? "selected" : "")
-      .on("click"), () => {
-        selectedYear = data[i].label == selectedYear ? null: data[i].label;
+      .attr("class", data[i].label === selectedYear ? "selected" : "")
+      .on("click", () => {
+        selectedYear = data[i].label === selectedYear ? null : data[i].label;
         applyFilters();
-      
-
-     
-    }
+      });
   });
+
   data.forEach((d, idx) => {
     legend.append("li")
     .attr("style", `--color:${colors(idx)}`)
     .attr("class", d.label == selectedYear ? "legend-item selected" : "legend-item")
     .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
 
-  }
-  );
+  });
 
 
 }
