@@ -5,13 +5,12 @@ let yScale;
 let commits = [];
 
 
-async function loadData(){
-    const data = await d3.csv("loc.csv");
-    console.log(data);
-    return data;
-
+async function loadData() {
+    return await d3.csv("loc.csv", d => ({
+        ...d,
+        datetime: new Date(d.datetime)
+    }));
 }
-
 
 function processCommits(data) {
     return d3
@@ -176,7 +175,7 @@ function renderScatterPlot(data, commits){
 
 
     const margin = {top: 10, right: 10, bottom: 30, left: 20};
-    
+
     const usableArea = {
         top: margin.top, 
         right: width - margin.right, 
@@ -277,6 +276,8 @@ function renderLanguageBreakdown(selection){
 
 let data = await loadData();
 commits = await processCommits(data);
+console.log(commits.length);
+console.log(commits[0].datetime);
 renderCommitInfo(data, commits);
 renderScatterPlot();
 
