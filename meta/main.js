@@ -7,14 +7,15 @@ let commits = [];
 
 async function loadData() {
     const data = await d3.csv("loc.csv", d => {
+        const dt = new Date(d.datetime);
+
         return {
             ...d,
-            datetime: new Date(d.datetime) 
+            datetime: isNaN(dt) ? null : dt
         };
     });
 
-    console.log(data);
-    return data;
+    return data.filter(d => d.datetime !== null);
 }
 
 function processCommits(data) {
@@ -55,7 +56,7 @@ function renderCommitInfo(data, commits){
         .append('dl')
         .attr('class', 'stats');
     //total lines of code 
-    dl.append('dt').text("Total <abbr title='Lines of Code'>LOC</abbr>");
+    dl.append('dt').text("Total Lines of Code");
     dl.append('dd').text(data.length);
     dl.append('dt').text('Total Commits');
     dl.append('dd').text(commits.length);
@@ -157,6 +158,10 @@ function renderSelectionCount(selection) {
         ? `${selected.length} commits selected`
         : "No commits selected"; 
 }
+
+console.log(
+  commits.map(d => d.datetime)
+);
 
 
 function renderScatterPlot(data, commits){
