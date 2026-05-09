@@ -13,6 +13,7 @@ const pages = [
   { url: "projects/", title: "Projects" },
   { url: "https://github.com/nkerudi", title: "GitHub" },
   { url: "https://www.linkedin.com/in/nikitha-kerudi/", title: "LinkedIn" },
+  { url: "meta/", title: "Meta"},
 ];
 
 const nav = document.createElement("nav");
