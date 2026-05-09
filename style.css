@@ -121,6 +121,21 @@ form button {
   justify-self: start;
 }
 
+.stats {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.stats dt {
+    font-weight: bold;
+}
+
+.stats dd {
+    margin: 0;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -299,4 +314,61 @@ section:last-of-type ul {
 #profile-stats dd {
   grid-row: 2;
   margin: 0;
+}
+
+
+dl.info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.4rem 1rem;
+
+    margin: 0;
+    padding: 1rem;
+}
+
+
+dl.info dt {
+    margin: 0;
+
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 600;
+}
+
+
+dl.info dd {
+    margin: 0;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #111;
+}
+
+
+.tooltip {
+    position: fixed;
+
+    top: 1em;
+    left: 1em;
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    pointer-events: none;
+}
+
+
+circle {
+    transition: 200ms;
+
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+circle:hover {
+    transform: scale(1.5);
 }
