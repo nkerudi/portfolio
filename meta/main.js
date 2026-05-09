@@ -153,7 +153,7 @@ function brushed(event) {
 
 function renderSelectionCount(selection) {
     const selected = selection ? commits.filter(d => isCommitSelected(selection, d)) : [];
-    document.quarySelector('#selection-count')
+    document.querySelector('#selection-count')
         .textContent = selected.length
         ? `${selected.length} commits selected`
         : "No commits selected"; 
@@ -264,7 +264,7 @@ function renderLanguageBreakdown(selection){
     if (!container) return;
     const relevant = selectedCommits.length ? selectedCommits : commits;
     const lines = relevant.flatMap(d => d.lines);
-    const breakdown = d3/rollup(
+    const breakdown = d3.rollup(
         lines, 
         v => v.length,
         d => d.type
@@ -289,7 +289,7 @@ commits = await processCommits(data);
 console.log(commits.length);
 console.log(commits[0].datetime);
 renderCommitInfo(data, commits);
-renderScatterPlot();
+renderScatterPlot(data, commits);
 
 
 
