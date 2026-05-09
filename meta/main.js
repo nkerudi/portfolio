@@ -111,14 +111,22 @@ function renderToolTipContent(commit){
     const author = document.getElementById('commit-author');
     const linesEdited = document.getElementById('commit-lines');
 
-    if (Object.keys(commit).length === 0) return;
+    if (!commit) return;
     
     link.href = commit.url;
     link.textContent = commit.id;
-    date.textContent = commit.datetime?.toLocalString('en', {
+
+    date.textContent = commit.datetime?.toLocaleDateString('en', {
         dateStyle: 'full',
     });
-    
+
+    time.textContent = commit.datetime?.toLocaleTimeString('en', {
+        timeStyle: 'short',
+    });
+
+    author.textContent = commit.author ?? "Unknown";
+
+    linesEdited.textContent = commit.totalLines ?? 0;
 }
 
 function updateTooltipVisibility(isVisible) {
