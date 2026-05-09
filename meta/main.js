@@ -6,10 +6,15 @@ let commits = [];
 
 
 async function loadData() {
-    return await d3.csv("loc.csv", d => ({
-        ...d,
-        datetime: new Date(d.datetime)
-    }));
+    const data = await d3.csv("loc.csv", d => {
+        return {
+            ...d,
+            datetime: new Date(d.datetime) 
+        };
+    });
+
+    console.log(data);
+    return data;
 }
 
 function processCommits(data) {
